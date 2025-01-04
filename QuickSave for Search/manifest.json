@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "QuickSave for Search",
+    "version": "1.0",
+    "description": "Une extension pour sauvegarder les recherches sur les pages de résultats de Google",
+    "permissions": ["storage", "activeTab"],
+    "content_scripts": [
+        {
+                   "matches": [
+                "*://*.google.com/*",
+                "*://*.google.fr/*",
+                "*://*.google.co.uk/*",
+                "*://*.google.ca/*",
+                "*://*.google.de/*",
+                "*://*.google.it/*",
+                "*://*.google.es/*",
+                "*://*.google.com.au/*",
+                "*://*.google.nl/*",
+                "*://*.google.co.in/*"
+            ],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}
